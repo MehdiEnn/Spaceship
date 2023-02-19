@@ -12,7 +12,10 @@ namespace ExerciceGuillaume1
     {
         public static void Main(string[] args)
         {
+            List<Spaceship> vaisseaux = new List<Spaceship>();
+            
             Spaceship spaceship = new Spaceship();
+            vaisseaux.Add(spaceship);
             spaceship.Launch();
             spaceship.Attack();
             spaceship.Move();
@@ -20,12 +23,14 @@ namespace ExerciceGuillaume1
 
             
             Battlestellar battlestellar = new Battlestellar();
+            vaisseaux.Add(battlestellar);
             battlestellar.Launch();
             battlestellar.Attack();
             battlestellar.Move();
             battlestellar.Destruction();
 
             Entreprise entreprise = new Entreprise();
+            vaisseaux.Add(entreprise);
             entreprise.Launch();
             entreprise.Attack();
             entreprise.Attack();
